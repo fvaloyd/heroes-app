@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchScreen /> Debe mostrar a batman y el input con el valor del queryString 1`] = `
+Array [
+  <h1>
+    Search a hero
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Formulario
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="hero name..."
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-info form-control mt-1"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Result
+      </h4>
+      <hr />
+      <div
+        className="col animate__animated animate__fadeIn"
+      >
+        <div
+          className="card h-100"
+        >
+          <div
+            className="row no-gutters"
+          >
+            <div
+              className="col-4 "
+            >
+              <img
+                alt="Batman"
+                className="card-img"
+              />
+            </div>
+            <div
+              className="col-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  className="card-text"
+                >
+                  <small
+                    className="text-muted"
+                  >
+                    Detective Comics #27
+                  </small>
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Mas...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas en <SearchScreen /> Debe mostrar una alerta de que el heroe buscado no existe 1`] = `
+Array [
+  <h1>
+    Search a hero
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Formulario
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="hero name..."
+          type="text"
+          value="batman324234"
+        />
+        <button
+          className="btn btn-outline-info form-control mt-1"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Result
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        No hay resultados: 
+        batman324234
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Pruebas en <SearchScreen /> Debe mostrarse correctamente con valores por defecto 1`] = `
+Array [
+  <h1>
+    Search a hero
+  </h1>,
+  <hr />,
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Formulario
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="hero name..."
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-info form-control mt-1"
+          type="submit"
+        >
+          Search...
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Result
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Buscar un heroe
+      </div>
+    </div>
+  </div>,
+]
+`;
